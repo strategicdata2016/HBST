@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: BuddyBoss Theme v2.2.4\n"
+"Project-Id-Version: BuddyBoss Theme v2.2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-26 07:03:35+00:00\n"
-"PO-Revision-Date: 2023-02-08 14:01+0400\n"
+"POT-Creation-Date: 2023-02-08 10:30:23+00:00\n"
+"PO-Revision-Date: 2023-02-22 12:09+0400\n"
 "Last-Translator: Thorsten Wollenhöfer <thorsten.wollenhoefer@gmail.com>\n"
 "Language-Team: Thorsten Wollenhöfer <thorsten.wollenhoefer@gmail.com>\n"
 "Language: de_DE@formal\n"
@@ -233,8 +233,8 @@ msgid "Posts"
 msgstr "Beiträge"
 
 #: bbpress/content-single-topic-lead.php:228
-#: bbpress/content-single-topic-lead.php:281 bbpress/form-reply.php:182
-#: bbpress/form-topic.php:231 inc/plugins/bbpress-helper.php:218
+#: bbpress/content-single-topic-lead.php:281 bbpress/form-reply.php:227
+#: bbpress/form-topic.php:276 inc/plugins/bbpress-helper.php:218
 #: inc/plugins/buddyboss-menu-icons/vendor/kucrut/icon-picker/includes/types/dashicons.php:104
 #: lifterlms/card-new-share.php:28
 msgid "Post"
@@ -338,8 +338,8 @@ msgstr ""
 
 #: bbpress/form-reply-activity.php:75 bbpress/form-reply.php:85
 #: bbpress/form-topic.php:108
-msgid "Type one or more tag, comma separated"
-msgstr "Geben Sie einen oder mehrere Tags, durch Komma getrennt, ein"
+msgid "Type one or more tags, comma separated"
+msgstr "Geben Sie ein oder mehrere Tags kommagetrennt ein"
 
 #: bbpress/form-reply-activity.php:92 bbpress/form-reply.php:114
 #: bbpress/form-topic.php:138
@@ -356,35 +356,45 @@ msgstr "Grund für die Bearbeitung (optional):"
 msgid "Optional reason for editing"
 msgstr "Optionaler Grund für die Bearbeitung"
 
-#: bbpress/form-reply-activity.php:120 bbpress/form-reply.php:155
-#: bbpress/form-topic.php:210
+#: bbpress/form-reply-activity.php:148 bbpress/form-reply.php:180
+#: bbpress/form-topic.php:235
 msgid "Notify the author of replies via email"
 msgstr "Benachrichtigt den Autor bei Antworten via E-Mail"
 
-#: bbpress/form-reply-activity.php:124 bbpress/form-reply.php:159
-#: bbpress/form-topic.php:214
-msgid "Notify me of replies via email"
-msgstr "Benachrichtigt mich bei Antworten via E-Mail"
+#: bbpress/form-reply-activity.php:152 bbpress/form-reply.php:184
+#: bbpress/form-topic.php:239
+msgid "Notify the author of replies"
+msgstr "Den Autor über Antworten benachrichtigen"
 
-#: bbpress/form-reply-activity.php:144
+#: bbpress/form-reply-activity.php:166 bbpress/form-reply.php:198
+#: bbpress/form-topic.php:253
+msgid "Notify me of new replies by email"
+msgstr "Benachrichtigen Sie mich über neue Antworten per E-Mail"
+
+#: bbpress/form-reply-activity.php:170 bbpress/form-reply.php:202
+#: bbpress/form-topic.php:257
+msgid "Notify me of new replies"
+msgstr "Benachrichtigen Sie mich über neue Antworten"
+
+#: bbpress/form-reply-activity.php:192
 msgid "Post Reply"
 msgstr "Antwort verfassen"
 
-#: bbpress/form-reply-activity.php:172 bbpress/form-reply.php:210
+#: bbpress/form-reply-activity.php:220 bbpress/form-reply.php:255
 msgid "The discussion &#8216;%s&#8217; is closed to new replies."
 msgstr "Die Diskussion &#8216;%s&#8217; ist für neue Antworten geschlossen."
 
-#: bbpress/form-reply-activity.php:181 bbpress/form-reply.php:219
+#: bbpress/form-reply-activity.php:229 bbpress/form-reply.php:264
 msgid "The forum &#8216;%s&#8217; is closed to new discussions and replies."
 msgstr ""
 "Das Forum &#8216;%s&#8217; ist für neue Diskussionen und Antworten "
 "geschlossen."
 
-#: bbpress/form-reply-activity.php:190 bbpress/form-reply.php:229
+#: bbpress/form-reply-activity.php:238 bbpress/form-reply.php:274
 msgid "You cannot reply to this discussion."
 msgstr "Sie können auf diese Diskussion nicht antworten."
 
-#: bbpress/form-reply-activity.php:190
+#: bbpress/form-reply-activity.php:238
 msgid "Log in to reply."
 msgstr "Zum Antworten anmelden."
 
@@ -412,7 +422,7 @@ msgstr "Antwort auf:"
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: bbpress/form-reply.php:179 bbpress/form-topic.php:229
+#: bbpress/form-reply.php:224 bbpress/form-topic.php:274
 msgid "Discard Draft"
 msgstr "Entwurf verwerfen"
 
@@ -436,15 +446,15 @@ msgstr "(Kein Forum)"
 msgid "Type:"
 msgstr "Typ:"
 
-#: bbpress/form-topic.php:258
+#: bbpress/form-topic.php:303
 msgid "The forum \"%s\" is closed to new discussions and replies."
 msgstr "Das Forum „%s“ ist für neue Diskussionen und Antworten geschlossen."
 
-#: bbpress/form-topic.php:267
+#: bbpress/form-topic.php:312
 msgid "You cannot create new discussions."
 msgstr "Sie können keine neuen Diskussionen erstellen."
 
-#: bbpress/form-topic.php:267
+#: bbpress/form-topic.php:312
 msgid "You must be logged in to create new discussions."
 msgstr "Sie müssen angemeldet sein, um neue Diskussionen erstellen zu können."
 
@@ -555,19 +565,19 @@ msgstr "Favoriten von %s"
 msgid "Likes"
 msgstr "Gefällt-mir-Klicks"
 
-#: bbpress/user-details.php:70
+#: bbpress/user-details.php:69
 msgid "%s's Subscriptions"
 msgstr "Abonnements von %s"
 
-#: bbpress/user-details.php:70 template-parts/header-profile-menu.php:390
+#: bbpress/user-details.php:69 template-parts/header-profile-menu.php:390
 msgid "Subscriptions"
 msgstr "Abonnements"
 
-#: bbpress/user-details.php:75
+#: bbpress/user-details.php:74
 msgid "Edit %s's Profile"
 msgstr "%ss Profil bearbeiten"
 
-#: bbpress/user-details.php:75
+#: bbpress/user-details.php:74
 #: buddypress/members/single/profile/profile-loop.php:28
 #: inc/custom-fonts/classes/class-buddyboss-custom-fonts-cpt.php:295
 #: inc/custom-fonts/classes/class-buddyboss-custom-fonts-cpt.php:296
@@ -791,6 +801,11 @@ msgstr "Nach Datum sortieren"
 msgid "Notifications"
 msgstr "Benachrichtigungen"
 
+#: buddypress/members/single/parts/item-subnav.php:22
+#: inc/plugins/elementor/widgets/header-bar/bb-header-bar.php:579
+msgid "Sub Menu"
+msgstr "Untermenü"
+
 #: buddypress/members/single/profile/profile-loop.php:89
 msgid "You have not yet added details to your profile."
 msgstr "Sie haben noch keine Details zu Ihrem Profil hinzugefügt."
@@ -808,8 +823,8 @@ msgstr "Profil Bearbeiten"
 
 #: buddypress/members/single/profile.php:15
 #: buddypress/members/single/settings.php:13
-msgid "View My Profile"
-msgstr "Mein Profil anzeigen"
+msgid "View Profile"
+msgstr "Profil ansehen"
 
 #: buddypress/members/single/settings.php:12
 msgid "Account Settings"
@@ -12137,13 +12152,13 @@ msgstr "Benutzerdefiniertes Feld #1"
 msgid "Custom Field #2"
 msgstr "Benutzerdefiniertes Feld #2"
 
-#: inc/plugins/buddypress-helper.php:213
+#: inc/plugins/buddypress-helper.php:219
 msgid "member"
 msgid_plural "members"
 msgstr[0] "Mitglied"
 msgstr[1] "Mitglieder"
 
-#: inc/plugins/buddypress-helper.php:289
+#: inc/plugins/buddypress-helper.php:295
 msgid "%d result"
 msgid_plural "%d results"
 msgstr[0] "%d Ergebnis"
@@ -14103,10 +14118,6 @@ msgid "Replace default toggle sidebar icon with one of your choice."
 msgstr ""
 "Ersetzen Sie das Standard-Umschalt-Seitenleistensymbol durch eines Ihrer "
 "Wahl."
-
-#: inc/plugins/elementor/widgets/header-bar/bb-header-bar.php:579
-msgid "Sub Menu"
-msgstr "Untermenü"
 
 #: inc/plugins/elementor/widgets/header-bar/bb-header-bar.php:665
 msgid "Header Bar Layout"
@@ -17308,6 +17319,9 @@ msgctxt "hash before order number"
 msgid "#"
 msgstr "#"
 
+#~ msgid "View My Profile"
+#~ msgstr "Mein Profil anzeigen"
+
 #~ msgid "My"
 #~ msgstr "Mein(e)"
 
@@ -17396,9 +17410,6 @@ msgstr "#"
 
 #~ msgid "Favorite"
 #~ msgstr "Favorisieren"
-
-#~ msgid "View Profile"
-#~ msgstr "Profil ansehen"
 
 #~ msgid ""
 #~ "Redux Framework version 4 is activated but not loaded. Redux Framework "

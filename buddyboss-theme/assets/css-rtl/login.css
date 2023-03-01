@@ -5201,6 +5201,9 @@ body.login:not(.login-split-page) .language-switcher {
   padding: 0 20px;
   width: 100%;
 }
+.login-action-confirm_admin_email.login-split-page #login {
+  max-width: 100%;
+}
 
 .login h1.admin-email__heading {
   font-size: 26px;

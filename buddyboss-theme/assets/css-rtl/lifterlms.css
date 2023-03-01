@@ -7348,8 +7348,8 @@ body div[submit-success] > .wpforms-confirmation-container-full:not(.wpforms-red
 .llms-print-certificate .back_to_home_page {
   font-size: 14px;
 }
-.llms-print-certificate .llms-button-secondary:focus, .llms-print-certificate .llms-button-secondary:active {
-  color: #fff;
+.llms-print-certificate button i {
+  font-size: 18px;
 }
 .llms-print-certificate .back_to_home_page {
   padding-top: 10px;
