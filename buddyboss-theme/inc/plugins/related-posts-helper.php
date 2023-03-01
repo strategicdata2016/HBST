@@ -31,15 +31,24 @@ if ( ! class_exists( '\BuddyBossTheme\RelatedPostsHelper' ) ) {
 			global $wpdb;
 
 			$wpdb->hide_errors();
-			$is_mariadb        = false;
-			$mysql_server_info = $wpdb->db_server_info();
-			// Check for the MariaDB.
-			if ( ! empty( $mysql_server_info ) && strpos( strtolower( $mysql_server_info ), 'maria' ) !== false ) {
+			$mysql_server_type    = $wpdb->db_server_info();
+			$mysql_server_version = $wpdb->db_version();
+
+			$is_mariadb = false;
+			if ( stristr( $mysql_server_type, 'mariadb' ) ) {
 				$is_mariadb = true;
+
+				// Account for MariaDB version being prefixed with '5.5.5-' on older PHP 8.0.15 versions.
+				if ( '5.5.5' === $mysql_server_version && PHP_VERSION_ID < 80016 ) {
+					// Strip the '5.5.5-' prefix and set the version to the correct value.
+					$mysql_server_type    = preg_replace( '/^5\.5\.5-(.*)/', '$1', $mysql_server_type );
+					$mysql_server_version = preg_replace( '/[^0-9.].*/', '', $mysql_server_type );
+				}
 			}
 
-			// If we're running mySQL v5.6, convert the WPDB posts table to InnoDB, since InnoDB supports FULLTEXT from v5.6 onwards.
-			if ( version_compare( 5.6, $wpdb->db_version(), '<=' ) || $is_mariadb ) {
+			if ( $is_mariadb && version_compare( 10.3, $mysql_server_version, '<=' ) ) {
+				$table_engine = 'InnoDB';
+			} elseif ( ! $is_mariadb && version_compare( 5.6, $mysql_server_version, '<=' ) ) {
 				$table_engine = 'InnoDB';
 			} else {
 				$table_engine = 'MyISAM';

@@ -35,8 +35,8 @@ if ( ! function_exists( 'buddyboss_theme_update' ) ) {
 			}
 
 			// Call to back up default cover images.
-			if ( version_compare( $current_version, '2.2.3', '>' ) && function_exists( 'bb_theme_update_2_2_4' ) ) {
-				bb_theme_update_2_2_4();
+			if ( version_compare( $current_version, '2.2.5', '>' ) && function_exists( 'bb_theme_update_2_2_6' ) ) {
+				bb_theme_update_2_2_6();
 			}
 
 			// update not to run twice.
@@ -588,11 +588,13 @@ function bb_theme_update_support_custom_icon_2_0_5() {
 /**
  * Run the DB engine update.
  *
- * @since 2.2.4
+ * @since 2.2.6
  *
  * @return void
+ *
+ * @throws ReflectionException
  */
-function bb_theme_update_2_2_4() {
+function bb_theme_update_2_2_6() {
 	if ( function_exists( 'buddyboss_theme' ) ) {
 		$base_theme_reflection = new ReflectionClass( get_class( buddyboss_theme() ) );
 		$related_posts_helper  = $base_theme_reflection->getProperty( '_related_posts_helper' );

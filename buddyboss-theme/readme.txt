@@ -2,7 +2,7 @@
 Contributors: BuddyBoss
 Requires at least: 4.9.1
 Tested up to: 6.1.1
-Version: 2.2.5
+Version: 2.2.6
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -18,6 +18,19 @@ BuddyBoss Theme is a community theme for the BuddyBoss Platform.
 4. Upload the file 'buddyboss-theme-child.zip'
 
 == Changelog ==
+
+= 2.2.6 =
+* Theme Options - Handled typography showing empty and duplicate font weight & style for Google web fonts
+* Profiles - Handled 'Profile Search' widget checkbox UI issues
+* Activity - Handled activity post with exact 4 media small style issues to correct the order
+* Messages - Improved join/left group thread notices styling
+* Messages - Handled group send private message UI issue specific to Windows OS
+* Moderation - Small styling support provided for @mention logic update
+* Moderation - Provided styling support for new notification moderation logic and workflow support
+* Login - Handled admin email verification screen page layout issue
+* Core - Handled wp posts database table storage engine 'InnoDB' getting changed to 'MyISAM' issue for MariaDB setup
+* LifterLMS - Handled broken certification template layout issue
+* WooCommerce - Handled my account payment screen missing icon issue
 
 = 2.2.5 =
 * Theme Options - Handled spacing issue with the maintenance page template
